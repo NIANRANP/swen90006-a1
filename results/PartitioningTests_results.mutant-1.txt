@@ -1,0 +1,157 @@
+Testsuite: swen90006.aqms.PartitioningTests
+Tests run: 26, Failures: 2, Errors: 12, Skipped: 0, Time elapsed: 0.119 sec
+
+Testcase: testAssignRoleWithoutDowngrade took 0.016 sec
+	Caused an ERROR
+Username does not exist: ADMIN
+swen90006.aqms.NoSuchUserException: Username does not exist: ADMIN
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.PartitioningTests.testAssignRoleWithoutDowngrade(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginWithIncorrectPassword took 0.02 sec
+	Caused an ERROR
+Incorrect password: WrongPassword for user UserNameA
+swen90006.aqms.IncorrectPasswordException: Incorrect password: WrongPassword for user UserNameA
+	at swen90006.aqms.AQMS.checkUsernamePassword(AQMS.java:427)
+	at swen90006.aqms.AQMS.login(AQMS.java:250)
+	at swen90006.aqms.PartitioningTests.testLoginWithIncorrectPassword(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testIndexWithinBoundsLengthZero took 0 sec
+	FAILED
+Unexpected exception when index is within bounds with length(data) = 0.
+junit.framework.AssertionFailedError: Unexpected exception when index is within bounds with length(data) = 0.
+	at swen90006.aqms.PartitioningTests.testIndexWithinBoundsLengthZero(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameLength took 0.01 sec
+Testcase: testAssignRoleUserHasDowngrade took 0.001 sec
+	Caused an ERROR
+Username does not exist: ADMIN
+swen90006.aqms.NoSuchUserException: Username does not exist: ADMIN
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.PartitioningTests.testAssignRoleUserHasDowngrade(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordSpecialCharacter took 0.001 sec
+Testcase: testLoginWithMatchingDeviceID took 0.001 sec
+Testcase: testUsernameNotAuthenticated took 0.001 sec
+	FAILED
+Expected UnauthenticatedUserException for an unauthenticated user.
+junit.framework.AssertionFailedError: Expected UnauthenticatedUserException for an unauthenticated user.
+	at swen90006.aqms.PartitioningTests.testUsernameNotAuthenticated(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleWithDowngrade took 0 sec
+	Caused an ERROR
+Username does not exist: ADMIN
+swen90006.aqms.NoSuchUserException: Username does not exist: ADMIN
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.PartitioningTests.testAssignRoleWithDowngrade(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordLength took 0.001 sec
+Testcase: testLoginWithNonMatchingDeviceID took 0.001 sec
+	Caused an ERROR
+Incorrect device ID: 9999 for user UserNameA
+swen90006.aqms.IncorrectDeviceIDException: Incorrect device ID: 9999 for user UserNameA
+	at swen90006.aqms.AQMS.checkUsernamePassword(AQMS.java:429)
+	at swen90006.aqms.AQMS.login(AQMS.java:250)
+	at swen90006.aqms.PartitioningTests.testLoginWithNonMatchingDeviceID(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordContainsDigit took 0 sec
+Testcase: testAssignRoleUserWithoutDowngrade took 0 sec
+	Caused an ERROR
+Username does not exist: USER
+swen90006.aqms.NoSuchUserException: Username does not exist: USER
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.PartitioningTests.testAssignRoleUserWithoutDowngrade(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterDeviceIDContainsDigit took 0 sec
+Testcase: testIndexWithinBoundsLengthOne took 0.001 sec
+	Caused an ERROR
+User UserNameA is not authenticated
+swen90006.aqms.UnauthenticatedUserException: User UserNameA is not authenticated
+	at swen90006.aqms.AQMS.getData(AQMS.java:331)
+	at swen90006.aqms.PartitioningTests.testIndexWithinBoundsLengthOne(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameUniqueness took 0.002 sec
+Testcase: testIndexOutOfBoundsLengthZero took 0 sec
+	Caused an ERROR
+Username does not exist: UserNameB
+swen90006.aqms.NoSuchUserException: Username does not exist: UserNameB
+	at swen90006.aqms.AQMS.addData(AQMS.java:302)
+	at swen90006.aqms.PartitioningTests.testIndexOutOfBoundsLengthZero(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameOnlyLetters took 0.001 sec
+	Caused an ERROR
+Username User123 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User123 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.testRegisterUsernameOnlyLetters(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testIndexWithinBoundsLengthGreaterThanOne took 0 sec
+	Caused an ERROR
+User UserNameA is not authenticated
+swen90006.aqms.UnauthenticatedUserException: User UserNameA is not authenticated
+	at swen90006.aqms.AQMS.getData(AQMS.java:331)
+	at swen90006.aqms.PartitioningTests.testIndexWithinBoundsLengthGreaterThanOne(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRoleIsUser took 0.001 sec
+	Caused an ERROR
+Username does not exist: USER
+swen90006.aqms.NoSuchUserException: Username does not exist: USER
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.PartitioningTests.testRoleIsUser(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterDeviceIDLength took 0 sec
+Testcase: testRegisterPasswordContainsLetterAndDigit took 0 sec
+Testcase: testRegisterUsernameNotRegistered took 0 sec
+Testcase: testLoginWithUnregisteredUsername took 0 sec
+Testcase: testNegativeIndex took 0 sec
+	Caused an ERROR
+Username does not exist: UserNameB
+swen90006.aqms.NoSuchUserException: Username does not exist: UserNameB
+	at swen90006.aqms.AQMS.addData(AQMS.java:302)
+	at swen90006.aqms.PartitioningTests.testNegativeIndex(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleToNonExistentUser took 0 sec

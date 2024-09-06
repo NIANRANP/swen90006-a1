@@ -1,0 +1,431 @@
+Testsuite: swen90006.aqms.BoundaryTests
+Tests run: 56, Failures: 2, Errors: 42, Skipped: 0, Time elapsed: 0.145 sec
+
+Testcase: testRegisterDeviceIDOnlyDigitsBoundary took 0.011 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterDeviceIDOnlyDigitsBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordLengthLessThan8Boundary took 0.001 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterPasswordLengthLessThan8Boundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testGetDataAuthenticationStatusBoundary took 0.001 sec
+	Caused an ERROR
+Username does not exist: ADMIN
+swen90006.aqms.NoSuchUserException: Username does not exist: ADMIN
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.BoundaryTests.testGetDataAuthenticationStatusBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordContainsSpecialCharactersBoundary took 0 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterPasswordContainsSpecialCharactersBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterDeviceIDLength4Boundary took 0 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterDeviceIDLength4Boundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameContainsNonLettersBoundary took 0.009 sec
+	Caused an ERROR
+Username UserName1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username UserName1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.BoundaryTests.testRegisterUsernameContainsNonLettersBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordContainsDigitsBoundary took 0 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterPasswordContainsDigitsBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterDeviceIDNotOnlyDigitsBoundary took 0.001 sec
+Testcase: testRegisterUsernameLengthBoundary took 0 sec
+Testcase: testGetDataIndexInRangeBoundary took 0 sec
+	Caused an ERROR
+Username does not exist: ADMIN
+swen90006.aqms.NoSuchUserException: Username does not exist: ADMIN
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.BoundaryTests.testGetDataIndexInRangeBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameLengthLessThan4Boundary took 0 sec
+Testcase: testRegisterDeviceIDLengthBoundary took 0 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterDeviceIDLengthBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordNoDigitsBoundary took 0.001 sec
+Testcase: testRegisterPasswordContainsLettersBoundary took 0 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterPasswordContainsLettersBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameUniquenessBoundary took 0 sec
+Testcase: testLoginUsernameExistsBoundary took 0.001 sec
+Testcase: testRegisterPasswordLengthBoundary took 0 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterPasswordLengthBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordNoLettersBoundary took 0 sec
+Testcase: testGetDataUsernameExistsBoundary took 0 sec
+	Caused an ERROR
+Username does not exist: USER
+swen90006.aqms.NoSuchUserException: Username does not exist: USER
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.BoundaryTests.testGetDataUsernameExistsBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginDeviceIDCorrectBoundary took 0.006 sec
+Testcase: testGetDataIndexBoundsBoundary took 0 sec
+	Caused an ERROR
+Username does not exist: ADMIN
+swen90006.aqms.NoSuchUserException: Username does not exist: ADMIN
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.BoundaryTests.testGetDataIndexBoundsBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameNotUniqueBoundary took 0.001 sec
+Testcase: testRegisterUsernameSpecialCharactersBoundary took 0 sec
+Testcase: testRegisterPasswordNoSpecialCharactersBoundary took 0 sec
+Testcase: testGetDataRoleCheckBoundary took 0 sec
+	Caused an ERROR
+Username does not exist: ADMIN
+swen90006.aqms.NoSuchUserException: Username does not exist: ADMIN
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.BoundaryTests.testGetDataRoleCheckBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginPasswordCorrectBoundary took 0 sec
+Testcase: testRegisterDeviceIDLengthGreaterThan4Boundary took 0 sec
+	Caused an ERROR
+Username already exists: UserName
+swen90006.aqms.DuplicateUserException: Username already exists: UserName
+	at swen90006.aqms.AQMS.register(AQMS.java:153)
+	at swen90006.aqms.BoundaryTests.testRegisterDeviceIDLengthGreaterThan4Boundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleUsernameExistsBoundary took 0 sec
+	Caused an ERROR
+Username does not exist: USER
+swen90006.aqms.NoSuchUserException: Username does not exist: USER
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.BoundaryTests.testAssignRoleUsernameExistsBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleUpgradeSameDowngradeBoundary took 0.001 sec
+	Caused an ERROR
+Username does not exist: USER
+swen90006.aqms.NoSuchUserException: Username does not exist: USER
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.BoundaryTests.testAssignRoleUpgradeSameDowngradeBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testGetDataIndexGreaterThanLengthBoundary took 0 sec
+	Caused an ERROR
+Username does not exist: ADMIN
+swen90006.aqms.NoSuchUserException: Username does not exist: ADMIN
+	at swen90006.aqms.AQMS.getRole(AQMS.java:470)
+	at swen90006.aqms.BoundaryTests.testGetDataIndexGreaterThanLengthBoundary(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleWithoutDowngrade took 0.002 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testAssignRoleWithoutDowngrade(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginWithIncorrectPassword took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.login(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.login(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testLoginWithIncorrectPassword(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testIndexWithinBoundsLengthZero took 0 sec
+	FAILED
+Unexpected exception when index is within bounds with length(data) = 0.
+junit.framework.AssertionFailedError: Unexpected exception when index is within bounds with length(data) = 0.
+	at swen90006.aqms.PartitioningTests.testIndexWithinBoundsLengthZero(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameLength took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterUsernameLength(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleUserHasDowngrade took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testAssignRoleUserHasDowngrade(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordSpecialCharacter took 0.001 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterPasswordSpecialCharacter(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginWithMatchingDeviceID took 0 sec
+	FAILED
+Unexpected exception during successful login: Cannot invoke "swen90006.aqms.AQMS.login(String, String, String)" because "this.aqms" is null
+junit.framework.AssertionFailedError: Unexpected exception during successful login: Cannot invoke "swen90006.aqms.AQMS.login(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testLoginWithMatchingDeviceID(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testUsernameNotAuthenticated took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testUsernameNotAuthenticated(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleWithDowngrade took 0.001 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testAssignRoleWithDowngrade(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordLength took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterPasswordLength(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginWithNonMatchingDeviceID took 0.001 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.login(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.login(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testLoginWithNonMatchingDeviceID(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordContainsDigit took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterPasswordContainsDigit(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleUserWithoutDowngrade took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testAssignRoleUserWithoutDowngrade(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterDeviceIDContainsDigit took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterDeviceIDContainsDigit(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testIndexWithinBoundsLengthOne took 0.001 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.addData(String, java.util.List)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.addData(String, java.util.List)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testIndexWithinBoundsLengthOne(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameUniqueness took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterUsernameUniqueness(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testIndexOutOfBoundsLengthZero took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.addData(String, java.util.List)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.addData(String, java.util.List)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testIndexOutOfBoundsLengthZero(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameOnlyLetters took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterUsernameOnlyLetters(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testIndexWithinBoundsLengthGreaterThanOne took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.addData(String, java.util.List)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.addData(String, java.util.List)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testIndexWithinBoundsLengthGreaterThanOne(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRoleIsUser took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRoleIsUser(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterDeviceIDLength took 0.001 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterDeviceIDLength(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterPasswordContainsLetterAndDigit took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterPasswordContainsLetterAndDigit(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterUsernameNotRegistered took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.register(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testRegisterUsernameNotRegistered(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginWithUnregisteredUsername took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.login(String, String, String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.login(String, String, String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testLoginWithUnregisteredUsername(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testNegativeIndex took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.addData(String, java.util.List)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.addData(String, java.util.List)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testNegativeIndex(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleToNonExistentUser took 0 sec
+	Caused an ERROR
+Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+java.lang.NullPointerException: Cannot invoke "swen90006.aqms.AQMS.getRole(String)" because "this.aqms" is null
+	at swen90006.aqms.PartitioningTests.testAssignRoleToNonExistentUser(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
